@@ -56,6 +56,13 @@ public class ImageComponent extends JComponent {
         return size.height;
     }
 
+    /**
+     * @return the image that this component displays
+     */
+    public BufferedImage getImage() {
+        return image;
+    }
+
     @Override
     public Dimension getMaximumSize() {
         return new Dimension(sizeMaximum);
