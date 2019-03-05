@@ -1,4 +1,4 @@
-package io.github.guiritter.imagecomponent;
+package io.github.guiritter.image_component;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -22,6 +22,8 @@ import javax.swing.JComponent;
 public class ImageComponent extends JComponent {
 
     private BufferedImage image = null;
+
+    private static final long serialVersionUID = -7869351502568971416L;
 
     protected final Dimension size = new Dimension(0, 0);
 
@@ -208,7 +210,7 @@ public class ImageComponent extends JComponent {
      * Sets the image that this component paints. This is the part
      * where the sizes of the component follow the size of the image,
      * if configured to do so.
-     * @param image
+     * @param image what this will be used to show
      */
     public void setImage(BufferedImage image) {
         this.image = image;

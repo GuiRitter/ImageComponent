@@ -1,4 +1,4 @@
-package io.github.guiritter.imagecomponent;
+package io.github.guiritter.image_component;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -30,14 +30,15 @@ import java.util.LinkedList;
  * @author Guilherme Alan Ritter
  */
 public final class ImageComponentMultiple extends ImageComponent{
-
     /**
-     * Image stack. The user can modify this list freely, but must run
-     * the {@link #update()} method afterwards to ensure expected behaviour.
-     * Applying specific changes to this list and not running
-     * the {@link #update()} method leads to undefined behaviour.
+     * Image stack. The user can modify this list freely, but must run the
+     * {@link #update()} method afterwards to ensure expected behaviour. Applying
+     * specific changes to this list and not running the {@link #update()} method
+     * leads to undefined behaviour.
      */
     public final LinkedList<BufferedImage> images = new LinkedList<>();
+
+    private static final long serialVersionUID = -7231014528527525725L;
 
     @Override
     public boolean isEmpty() {

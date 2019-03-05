@@ -1,12 +1,12 @@
-package io.github.guiritter.imagecomponent.demo;
+package io.github.guiritter.image_component.demo;
 
-import io.github.guiritter.imagecomponent.ImageComponent;
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
-import java.io.File;
 import java.io.IOException;
-import javax.imageio.ImageIO;
+
 import javax.swing.JFrame;
+
+import io.github.guiritter.image_component.ImageComponent;
 
 public final class Single {
 
@@ -31,8 +31,7 @@ public final class Single {
         }
         JFrame frame = new JFrame("ImageComponent Demo Single");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add(new ImageComponent(
-         ImageIO.read(new File("path//to//image.png"))));
+        frame.getContentPane().add(new ImageComponent(image));
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);

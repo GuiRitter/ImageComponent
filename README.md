@@ -32,3 +32,5 @@ frame.setVisible(true);
 I wish I could've implemented the List interface to handle the stack, but there's a conflict with the `remove` and `size` methods, whose names both belong to the JComponent class and the List interface. I also intended to implement automatic stretching with original aspect ratio control, control over the position of each image inside the component, and maybe other features, but I think it's good enough as it is and I want to focus on getting more of my projects here.
 
 I've written a demo class for each class. Just run it and you'll see it in action.
+
+[A few words about Maven.](https://gist.github.com/GuiRitter/1834bd024756e08ab422026a7cd24605)

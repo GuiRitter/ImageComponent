@@ -1,6 +1,6 @@
-package io.github.guiritter.imagecomponent.demo;
+package io.github.guiritter.image_component.demo;
 
-import io.github.guiritter.imagecomponent.ImageComponentMultiple;
+import io.github.guiritter.image_component.ImageComponentMultiple;
 import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
 import java.awt.image.WritableRaster;
@@ -50,7 +50,7 @@ public final class Multiple {
         multiple.setPreferredSize(multiple.getSize());
         multiple.setMaximumSize(multiple.getSize());
         multiple.update();
-        JFrame frame = new JFrame("ImageComponent Demo Single");
+        JFrame frame = new JFrame("ImageComponent Demo Multiple");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(
          new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
